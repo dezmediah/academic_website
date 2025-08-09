@@ -7,14 +7,14 @@ nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md -->
-
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
-
+### Peer-Reviewed Publications
 <div class="publications">
+{% bibliography --query @*[keywords~=peer-reviewed] %}
+</div>
 
-{% bibliography %}
+<div style="border-top:2px solid var(--global-text-color); margin:2rem 0;"></div>
 
+### Creative Writing
+<div class="publications">
+{% bibliography --query @*[keywords~=creative writing] %}
 </div>
